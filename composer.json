@@ -1,0 +1,28 @@
+{
+	"name": "ovidiu-ostafi/swiftbcc",
+	"description": "Laravel bcc plugin for swift library",
+	"keywords": ["mail", "bcc"],
+	"license": "MIT",
+	"type": "plugin",
+	"authors": [{
+			"name": "Ovidiu Ostafi",
+			"email": "ovidiu.ostafi@webreference.ro"
+		}
+	],
+	"require": {
+		"php": ">=5.6.4",
+		"laravel/laravel": ">=5.2.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"SwiftBcc\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"SwiftBcc\\SwiftBccProvider"
+			]
+		}
+	}
+}
